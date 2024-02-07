@@ -8,15 +8,28 @@ namespace GenericFunc
 {
     public class Functions
     {
-        public static int FindLargest(List<int> list)
+
+        public static int FindLargest(List<int> listofint)
         {
-            int result = 0;
-            foreach(int i in list)
+            int tal = 0;
+            foreach (int i in listofint)
             {
-                if(i > result)
-                    result = i;
+                if (i > tal)
+                {
+                    tal = i;
+                }
             }
-            return result;
+            return tal;
+        }
+        public static T FindLargest<T>(List<T> listOfTypes) where T : IComparable<T>
+        {
+            T? type = listOfTypes.FirstOrDefault();
+            foreach (T t in listOfTypes)
+            {
+                if (type.CompareTo(t) < 0)
+                    type = t;
+            }
+            return type;
         }
     }
 }

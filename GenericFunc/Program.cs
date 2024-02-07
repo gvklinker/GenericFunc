@@ -1,5 +1,7 @@
 ﻿using GenericFunc;
 // See https://aka.ms/new-console-template for more information
+using GenericFunc;
+
 Console.WriteLine("Hello, World!");
 // Opgave 1
 List<int> intList = new List<int>() { 5, 10, 3, 8, 15 };

@@ -1,8 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using GenericFunc;
+
 Console.WriteLine("Hello, World!");
 // Opgave 1
-//List<int> intList = new List<int>() { 5, 10, 3, 8, 15 };
-//Console.WriteLine("Largest element in intList: " + Functions.FindLargest(intList)); // Output: 15
+List<int> intList = new List<int>() { 5, 10, 3, 8, 15 };
+Console.WriteLine("Largest element in intList: " + Functions.FindLargest(intList)); // Output: 15
+
 
 
 // Opgave 2
